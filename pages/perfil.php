@@ -1,14 +1,13 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <?php include '../partes/head.php'; ?>
 <?php include '../partes/navbar.php'; ?>
+
 <body>
-
-    
-
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center pt-5 pb-3">
@@ -18,9 +17,15 @@
     <!-- Page Header End -->
 
     <!-- PRUEBAS -->
-    
-    <?php include '../partes/login/formulariologin.php'; ?>
-
+    <div class="containerform" id="containerform">
+            <?php
+            if (isset($_SESSION['username'])) {
+                include '../pages/editProfile.php';
+            } else {
+                include '../partes/login/formulariologin.php';
+            }
+            ?>
+    </div>
 
     <!-- PRUEBAS -->
     <?php include '../partes/footer.php'; ?>

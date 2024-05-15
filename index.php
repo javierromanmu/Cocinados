@@ -192,7 +192,7 @@ session_start();
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> <?php echo $_SESSION['username']?> <i class="bi bi-person fs-2"> </i></a>
                 <div class="dropdown-menu mr-5">
-                    <a class="dropdown-item" href=""><i class="bi bi-person"> </i>Perfil</a>
+                    <a class="dropdown-item" href="pages/perfil.php"><i class="bi bi-person"> </i>Perfil</a>
                     <a class="dropdown-item" href=""><i class="bi bi-bookmark-heart"></i>Tus recetas</a>
                     <a class="dropdown-item" href="./partes/login/logout.php"><i class="bi bi-door-closed"></i>Logut</a>
                 </div>
